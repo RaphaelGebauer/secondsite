@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import { FaBars, FaTimes } from "react-icons/fa"
 import { IconContext } from "react-icons/lib"
 import { MobileIcon, Nav, NavbarContainer, NavLogo, NavIcon, NavMenu, NavItem, NavLinks } from "./NavbarElements"
@@ -32,10 +32,10 @@ const Navbar = () => {
                         <NavIcon />
                         STRITAGO
                     </NavLogo>
-                    <MobileIcon onClick={handleClick}>
-                        {click ? <FaTimes /> : <FaBars />}
+                    <MobileIcon onClick={ handleClick }>
+                        { click ? <FaTimes /> : <FaBars /> }
                     </MobileIcon>
-                    <NavMenu onClick={handleClick} click={click}>
+                    <NavMenu onClick={ handleClick } click={ click }>
                         <NavItem>
                             <NavLinks to="/">Home</NavLinks>
                         </NavItem>
